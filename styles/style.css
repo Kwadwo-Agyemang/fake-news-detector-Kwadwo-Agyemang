@@ -1,0 +1,116 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  font-family: "Open-Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+#title {
+  color: rgb(2, 20, 35);
+  padding: 1.2rem 2.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+#title:hover {
+  text-decoration: underline;
+}
+
+#links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  margin-left: 1.2rem;
+  font-size: 1rem;
+  color: rgb(33, 34, 36);
+}
+
+.link:hover {
+  color: rgb(33, 34, 36);
+  text-decoration: underline;
+}
+
+main {
+  min-height: 70vh;
+  text-align: center;
+}
+
+form div {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 10rem;
+  height: 2.4rem;
+  outline: none;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  color: black;
+  text-align: center;
+}
+
+footer p:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 47rem) {
+  #main-header {
+    display: block;
+    text-align: center;
+  }
+  #links {
+    display: block;
+    background-color: grey;
+    width: 70%;
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 3rem 0;
+    border-radius: 5px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .link {
+    color: white;
+  }
+
+  .link:hover {
+    color: white;
+  }
+}

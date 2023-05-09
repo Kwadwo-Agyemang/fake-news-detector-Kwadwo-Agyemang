@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Fake News Prediction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <a href="" id="title">Fake News Detector</a>
+      <nav>
+        <ul id="links">
+          <li>
+            <a href="" class="link">About Me</a>
+          </li>
+          <li>
+            <a href="" class="link">About The Project</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+    <main>
+      <p>Paste your news feed into the text box</p>
+      <br />
+      {% if result %}
+      <p>
+        <strong>Prediction : {{result}} News</strong>
+      </p>
+      {% endif %}
+      <br />
+      <div class="container">
+        <form action="/" method="POST">
+          <div>
+            <textarea rows="10" name="text" placeholder="" required>
+{{text}}</textarea
+            >
+            <br /><br />
+            <button type="submit" name="predict">Check</button>
+          </div>
+        </form>
+      </div>
+      <br />
+    </main>
+
+    <footer>
+      <p>
+        An implementation of the Passive-Aggressive Algorithm to detect fake
+        news.
+      </p>
+      <p>Copyright (c) 2023</p>
+    </footer>
+  </body>
+</html>
